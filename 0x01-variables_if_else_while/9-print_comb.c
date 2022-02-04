@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <string.h> // for srtlen
 
 /**
  * main - prints out all possible combinations of single-digit numbers.
@@ -13,15 +15,15 @@ int main(void)
 
 	for (charValue = 48; charValue <= 57; charValue++)
 	{
-		if (charValue <= 56)
+		putchar(charValue);
+		if (charValue != 57)
 		{
-			putchar(charValue);
 			putchar(comma);
 			putchar(space);
 		}
 		else
 		{
-			putchar(charValue);
+			putchar('\n');
 		}
 	}
 
