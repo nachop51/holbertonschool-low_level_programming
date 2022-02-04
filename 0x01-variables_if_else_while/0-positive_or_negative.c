@@ -13,14 +13,14 @@ int main(void)
 
 	if (r > 0)
 	{
-		printf("%d is positive", r);
+		printf("%d is positive\n", r);
 	}
 	else if (r == 0)
 	{
-		printf("%d is zero", r)
+		printf("%d is zero\n", r)
 	}
 	else
 	{
-		printf("%d is negative", r)
+		printf("%d is negative\n", r)
 	}
 }
