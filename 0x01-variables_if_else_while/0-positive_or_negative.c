@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
  * main - prints out a value depending on the number
@@ -9,14 +9,12 @@
  */
 int main(void)
 {
-	srand(time(NULL));
-	int r = rand();
-	int r2 = rand() % 10;
+	int n;
 
-	if (r2 >= 5)
-	{
-		r = (r * -1);
-	}
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	int r = n;
 
 	if (r > 0)
 	{
