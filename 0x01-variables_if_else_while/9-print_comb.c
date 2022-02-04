@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
-#include <string.h> // for srtlen
 
 /**
  * main - prints out all possible combinations of single-digit numbers.
