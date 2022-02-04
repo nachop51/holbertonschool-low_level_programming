@@ -9,8 +9,6 @@ int main(void)
 {
 	int charValue;
 	int charValue2;
-	int comma = 44;
-	int space = 32;
 
 	for (charValue = 0; charValue <= 9; charValue++)
 	{
@@ -26,8 +24,8 @@ int main(void)
 				}
 				else
 				{
-					putchar(comma);
-					putchar(space);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
