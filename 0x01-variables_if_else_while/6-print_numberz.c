@@ -9,10 +9,10 @@ int main(void)
 {
 	int charValue;
 
-	for (charValue = 48; charValue <= 57; charValue++)
+	for (charValue = 0; charValue <= 9; charValue++)
 	{
-		putchar(charValue);
-		if (charValue == 57)
+		putchar(charValue + '0');
+		if (charValue == 9)
 		{
 			putchar('\n');
 		}
