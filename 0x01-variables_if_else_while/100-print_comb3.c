@@ -7,18 +7,18 @@
  */
 int main(void)
 {
-	int charValue;
-	int charValue2;
+	int firstV;
+	int secondV;
 
-	for (charValue = 0; charValue <= 9; charValue++)
+	for (firstV = 0; firstV <= 9; firstV++)
 	{
-		for (charValue2 = charValue; charValue2 <= 9; charValue2++)
+		for (secondV = firstV; secondV <= 9; secondV++)
 		{
-			if (charValue != charValue2)
+			if (firstV != secondV)
 			{
-				putchar(charValue + '0');
-				putchar(charValue2 + '0');
-				if(charValue == 8 && charValue2 == 9) 
+				putchar(firstV + '0');
+				putchar(secondV + '0');
+				if(firstV == 8 && secondV == 9) 
 				{
 					putchar('\n');
 				}
