@@ -20,7 +20,11 @@ int main(void)
 			{
 				putchar(charValue + '0');
 				putchar(charValue2 + '0');
-				if (charValue != 8 && charValue2 != 9)
+				if(charValue == 8 && charValue2 == 9) 
+				{
+					putchar('\n');
+				}
+				else
 				{
 					putchar(comma);
 					putchar(space);
