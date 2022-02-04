@@ -9,9 +9,12 @@
  */
 int main(void)
 {
+	int n;
+
 	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	int r = n;
 	/* r stands for random */
-	int r = rand();
 	int random2 = rand() % 10;
 
 	if (random2 >= 5)
