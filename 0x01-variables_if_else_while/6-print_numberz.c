@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	int charValue;
+	int value;
 
-	for (charValue = 0; charValue <= 9; charValue++)
+	for (value = 0; value <= 9; value++)
 	{
-		putchar(charValue + '0');
-		if (charValue == 9)
+		putchar(value + '0');
+		if (value == 9)
 		{
 			putchar('\n');
 		}

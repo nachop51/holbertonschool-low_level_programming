@@ -12,6 +12,7 @@ int main(void)
 	int n;
 
 	n = rand() - RAND_MAX / 2;
+
 	int r = n;
 	/* r stands for random */
 
