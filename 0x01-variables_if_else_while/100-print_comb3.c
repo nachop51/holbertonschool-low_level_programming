@@ -18,7 +18,7 @@ int main(void)
 			{
 				putchar(firstV + '0');
 				putchar(secondV + '0');
-				if(firstV == 8 && secondV == 9) 
+				if(firstV == 8 && secondV == 9)
 				{
 					putchar('\n');
 				}
