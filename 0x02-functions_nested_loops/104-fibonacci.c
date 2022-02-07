@@ -18,7 +18,7 @@ int main(void)
 		num1 = num2;
 		num2 = temp;
 
-		if (i < 97)
+		if (i < 98)
 			printf(", ");
 	}
 	printf("\n");
