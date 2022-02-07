@@ -8,7 +8,7 @@
  */
 int _isalpha(int letter)
 {
-	if (letter > 64 && letter < 91)
+	if ((letter > 64 && letter < 91) || (letter > 96 && letter < 123))
 	{
 		return (1);
 	}
