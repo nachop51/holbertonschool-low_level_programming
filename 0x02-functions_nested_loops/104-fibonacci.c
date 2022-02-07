@@ -11,7 +11,7 @@ int main(void)
 	unsigned long sum = 0, num1 = 1, num2 = 2;
 
 	printf("%ld, %ld, ", num1, num2);
-	for (; i < 98; i++)
+	for (; i <= 97; i++)
 	{
 		sum = num1 + num2;
 		printf("%lu", sum);
