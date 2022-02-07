@@ -2,17 +2,12 @@
 
 /**
  * main - check the code
+ * @number: to check
  *
  * Return: Always 0.
  */
-int main(void)
+int print_last_digit(int number)
 {
-	int r;
-
-	print_last_digit(98);
-	print_last_digit(0);
-	r = print_last_digit(-1024);
-	_putchar('0' + r);
-	_putchar('\n');
-	return (0);
+	int last_digit = number % 10;
+	return (last_digit);
 }
