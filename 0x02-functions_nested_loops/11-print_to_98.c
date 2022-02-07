@@ -26,11 +26,14 @@ void print_to_98(int num)
 	{
 		for (; num >= 98; num--)
 		{
-			printf("%d, ", num);
-		}
-		if (num != 98)
-		{
-			printf("%d\n", num);
+			if (num != 98)
+			{
+				printf("%d, ", num);
+			}
+			else
+			{
+				printf("%d\n", num);
+			}
 		}
 	}
 }
