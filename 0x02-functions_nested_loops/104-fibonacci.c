@@ -1,26 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
-*main - prints fibo first 98
-*Return: always 0
-*/
+ * main - entry - point
+ *
+ * Return: always 0 (success)
+ */
 int main(void)
 {
-	int i = 3;
-	unsigned long sum = 0, num1 = 1, num2 = 2;
+	unsigned long f = 0, f1 = 1, res;
+	int count;
 
-	printf("%ld, %ld, ", num1, num2);
-	for (; i <= 97; i++)
+	for (count = 0; count < 98; count++)
 	{
-		sum = num1 + num2;
-		printf("%lu", sum);
-		num1 = num2;
-		num2 = sum;
+		res = f + f1;
+		f = f1, f1 = res;
 
-		if (i < 97)
-			printf(", ");
+		printf("%lu", res);
+		if (count != 97)
+			putchar(44), putchar(32);
 	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }
