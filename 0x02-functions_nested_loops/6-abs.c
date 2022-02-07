@@ -3,6 +3,7 @@
 
 /**
  * _abs - absolute value
+ * @number: to check
  *
  * Return: no error
  */
