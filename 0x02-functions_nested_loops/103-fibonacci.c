@@ -9,10 +9,11 @@ int main(void)
 {
 	long n1 = 1;
 	long n2 = 0;
-	long sum;
+	long sum = 0;
+	long sum2 = 0;
 	int count;
 
-	for (count = 0; count <= 49 ; count++)
+	for (count = 0; count <= 40 ; count++)
 	{
 		sum = n1 + n2;
 		n2 = n1;
@@ -21,9 +22,10 @@ int main(void)
 		{
 			if (sum % 2 == 0)
 			{
-				printf("%ld, ", sum);
+				sum2 += sum;
 			}
 		}
 	}
+	printf("%ld\n", sum2);
 	return (0);
 }
