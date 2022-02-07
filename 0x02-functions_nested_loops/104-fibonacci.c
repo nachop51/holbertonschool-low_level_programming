@@ -7,16 +7,16 @@
  */
 int main(void)
 {
-	unsigned long f = 0, f1 = 1, res;
+	unsigned long num1 = 0, num2 = 1, result;
 	int count;
 
-	for (count = 0; count < 98; count++)
+	for (count = 0; count < 99; count++)
 	{
-		res = f + f1;
-		f = f1, f1 = res;
+		result = num1 + num2;
+		num1 = num2, num2 = result;
 
-		printf("%lu", res);
-		if (count != 97)
+		printf("%lu", result);
+		if (count != 98)
 			putchar(44), putchar(32);
 	}
 	putchar(10);
