@@ -6,11 +6,9 @@
  */
 void print_times_table(int n)
 {
-	if (n > 0 && n < 16)
+	if (n >= 0 && n < 16)
 	{
-		int x;
-		int y;
-		int result;
+		int x, y, result;
 
 		for (x = 0; x <= n; x++)
 		{
