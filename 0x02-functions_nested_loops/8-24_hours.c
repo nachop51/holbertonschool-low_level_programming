@@ -20,8 +20,9 @@ void jack_bauer(void)
 		else
 		{
 			_putchar(hours / 10 + '0');
-			_putchar(hours % 10);
+			_putchar(hours % 10 + '0');
 		}
+		_putchar(':');
 		_putchar('\n');
 
 	}
