@@ -3,6 +3,7 @@
 /**
  * main - prints out the sum of all multiples of 3 and 5 below 1024
  *
+ * Return: no error
  */
 int main(void)
 {
