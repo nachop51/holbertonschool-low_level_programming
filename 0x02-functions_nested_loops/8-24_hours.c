@@ -1,12 +1,28 @@
 #include "main.h"
 
 /**
- * main - prints out
+ * jack_bauer - prints out all the hours and minutes
  *
  * Return: no error
  */
-int main(void)
+void jack_bauer(void)
 {
-	jack_bauer();
-	return (0);
+	int hours;
+	int minutes;
+
+	for (hours = 0; hours <= 22; hours++)
+	{
+		if (hours < 10)
+		{
+			_putchar('0');
+			_putchar(hours + '0');
+		}
+		else
+		{
+			_putchar(hours / 10 + '0');
+			_putchar(hours % 10);
+		}
+		_putchar('\n');
+
+	}
 }
