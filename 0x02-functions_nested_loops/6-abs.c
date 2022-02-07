@@ -2,21 +2,19 @@
 #include <stdio.h>
 
 /**
- * main - absolute value
+ * _abs - absolute value
  *
  * Return: no error
  */
-int main(void)
+int _abs(int number)
 {
-	int r;
-
-	r = _abs(-1);
-	printf("%d\n", r);
-	r = _abs(0);
-	printf("%d\n", r);
-	r = _abs(1);
-	printf("%d\n", r);
-	r = _abs(-98);
-	printf("%d\n", r);
-	return (0);
+	if (number < 0)
+	{
+		number = number * (-1);
+	}
+	else if (number == 0)
+	{
+		return (number);
+	}
+	return (number);
 }
