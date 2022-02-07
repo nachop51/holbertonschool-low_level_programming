@@ -2,6 +2,7 @@
 
 /**
  * _islower - checks if is lower or not
+ * @letter: letter to check
  *
  * Return: no error
  */
