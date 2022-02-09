@@ -13,18 +13,13 @@ int main(void)
 
 	for (i = 2; i < number; i++)
 	{
-		for (j = 2; j < i / 2; j++)
+		if ((number % 1) == 0)
 		{
-			if (i % j == 0)
-			{
-				break;
-			}
-			else
-			{
-				largestF = i;
-			}
+			number /= i;
+			i--;
 		}
 	}
+
 	printf("%ld", largestF);
 	return (0);
 }
