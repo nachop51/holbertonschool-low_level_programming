@@ -7,19 +7,18 @@
  */
 int main(void)
 {
-	long int i = 2, j = 2;
-	long int largestF = 0;
+	long int i = 2;
 	long int number = 612852475143;
 
 	for (i = 2; i < number; i++)
 	{
-		if ((number % 1) == 0)
+		if ((number % i) == 0)
 		{
 			number /= i;
 			i--;
 		}
 	}
 
-	printf("%ld", largestF);
+	printf("%ld\n", number);
 	return (0);
 }
