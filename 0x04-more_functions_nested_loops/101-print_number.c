@@ -11,8 +11,15 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
-		test *= -1;
+		if (n > INT_MIN)
+		{
+			n *= -1;
+			test *= -1;
+		}
+		else
+		{
+			n = INT_MAX;
+		}
 	}
 	while (test != 0)
 	{
