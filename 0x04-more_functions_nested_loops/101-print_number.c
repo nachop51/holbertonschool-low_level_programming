@@ -6,36 +6,30 @@
  */
 void print_number(int n)
 {
-	int count = 0, test = n, var = 1;
+	int count = 0, var = 1;
+	unsigned int out, test;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		if (n > INT_MIN)
-		{
-			n *= -1;
-			test *= -1;
-		}
-		else
-		{
-			n = INT_MAX;
-		}
+		out = n * -1;	
 	}
+	else
+		out = n;
+	test = out;
 	while (test != 0)
 	{
 		test /= 10;
 		count++;
 	}
-
-	count = count - 1;
-
+	count--;
 	while (count > 0)
 	{
 		var = power(10, count);
-		_putchar((n / var) % 10 + '0');
+		_putchar((out / var) % 10 + '0');
 		count--;
 	}
-	_putchar(n % 10 + '0');
+	_putchar(out % 10 + '0');
 }
 
 /**
