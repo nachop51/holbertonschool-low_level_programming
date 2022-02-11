@@ -11,7 +11,7 @@
 void rev_string(char *s)
 {
 	char str;
-	int i = 0, j = strlen(s) - 1;
+	int i = 0, j = _strlen(s) - 1;
 
 	for (i = 0; i < j; i++)
 	{
@@ -20,4 +20,24 @@ void rev_string(char *s)
 		s[i] = str;
 		j--;
 	}
+}
+
+/**
+ * _strlen - string length
+ * @s: string
+ *
+ * Return: the length of a string
+ */
+int _strlen(char *s)
+{
+	int i;
+	char a;
+
+	for (i = 0; i > -1 ; i++)
+	{
+		a = s[i];
+		if (a == '\0')
+			break;
+	}
+	return (i);
 }
