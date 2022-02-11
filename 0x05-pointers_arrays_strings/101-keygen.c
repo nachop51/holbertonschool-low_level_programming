@@ -13,5 +13,5 @@ int main(void)
 
 	srand(time(NULL));
 	num = rand();
-	return (num);
+	return (0);
 }
