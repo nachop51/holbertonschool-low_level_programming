@@ -13,7 +13,7 @@ int _atoi(char *s)
 	unsigned int i, j = _strlen(s) - 1;
 	int flag = 0, sign = 1, n = 0;
 
-	if (s == "")
+	if (s == NULL)
 		return (0);
 	for (i = 0; i <= j; i++)
 	{
