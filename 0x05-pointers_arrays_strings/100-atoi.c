@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
 	char c;
 	unsigned int i, j = _strlen(s) - 1;
-	int flag = 0, sign = 1 n = 0;
+	int flag = 0, sign = 1, n = 0;
 
 	for (i = 0; i <= j; i++)
 	{
