@@ -10,8 +10,8 @@
 int _atoi(char *s)
 {
 	char c;
-	unsigned int i, j = _strlen(s) - 1;
-	int flag = 0, sign = 1, n = 0;
+	unsigned int i, j = _strlen(s) - 1, n = 0;
+	int flag = 0, sign = 1;
 
 	for (i = 0; i <= j; i++)
 	{
@@ -20,9 +20,7 @@ int _atoi(char *s)
 			sign *= -1;
 		if (c >= 48 && c <= 57)
 		{
-			n += c - 48;
-			if (n < 100000000)
-				n *= 10;
+			n = n * 10 + (c - '0');
 			flag = 1;
 		}
 		if (flag == 1)
@@ -35,7 +33,6 @@ int _atoi(char *s)
 	{
 		n *= -1;
 	}
-	n /= 10;
 	return (n);
 }
 
