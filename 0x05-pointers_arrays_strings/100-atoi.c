@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	char c;
-	unsigned int i, j = _strlen(s) - 1, n = 0;
+	unsigned int i, n = 0, j = _strlen(s) - 1, null = -1;
 	int flag = 0, sign = 1;
 
 	for (i = 0; i <= j; i++)
@@ -33,6 +33,8 @@ int _atoi(char *s)
 	{
 		n *= -1;
 	}
+	if (j == null)
+		return (0);
 	return (n);
 }
 
