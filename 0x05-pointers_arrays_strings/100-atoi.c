@@ -21,7 +21,8 @@ int _atoi(char *s)
 		if (c >= 48 && c <= 57)
 		{
 			n += c - 48;
-			n *= 10;
+			if (n < 1000000000)
+				n *= 10;
 			flag = 1;
 		}
 		if (flag == 1)
