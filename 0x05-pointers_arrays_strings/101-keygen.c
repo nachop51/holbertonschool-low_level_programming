@@ -12,7 +12,7 @@ int main(void)
 	int n = 0;
 	int	i = 2772;
 
-	srand(time(0));
+	srand(time(NULL));
 	n = rand() % 98;
 	while (i != 0)
 	{
