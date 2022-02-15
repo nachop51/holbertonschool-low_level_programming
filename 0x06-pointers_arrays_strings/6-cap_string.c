@@ -8,7 +8,7 @@
  */
 char *cap_string(char *s)
 {
-	int i = 0, j = 0, cap = 0, flag = 0, sep = 0;
+	int i = 0, j = 0, sep = 0;
 
 	while (s[i] != '\0')
 	{
@@ -17,38 +17,20 @@ char *cap_string(char *s)
 	}
 	for (i = 0; i < j; i++)
 	{
-		if (s[i] >= 65 && s[i] <= 90)
-			cap++;
-		switch (s[i])
+		if (s[i] == '\n' || s[i] == '\t' || s[i] == ' ' || s[i] == ',')
+			sep++;
+		if (s[i] == ';' || s[i] == '.' || s[i] == '!' || s[i] == '?')
+			sep++;
+		if (s[i] == '"' || s[i] == '(' || s[i] == ')' || s[i] == '{')
+			sep++;
+		if (s[i] == '}')
+			sep++;
+		if (sep == 1)
 		{
-			case ' ':
-			case '\t':
-			case '\n':
-			case ',':
-			case ';':
-			case '.':
-			case '!':
-			case '?':
-			case '"':
-			case '(':
-			case ')':
-			case '{':
-			case '}':
-				sep++;
-				break;
-			default:
-				sep = 0;
-				break;
-		}
-		if (s[i] >= 97 && s[i] <= 122)
-			flag = 1;
-		if (cap == 1)
-		{
-			flag = 0;
-		}
-		if (flag == 1 && sep == 1)
-		{
-			s[i] += 32;
+			if (s[i + 1] >= 97 && s[i + 1] <= 122)
+			{
+				s[i + 1] = s[i + 1] - 32;
+			}
 			sep = 0;
 		}
 	}
