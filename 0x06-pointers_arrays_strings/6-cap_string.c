@@ -20,8 +20,9 @@ char *cap_string(char *s)
 		if (s[i] >= 65 && s[i] <= 90)
 			cap++;
 		switch (s[i])
+		{
 			case ' ':
-			case 11:
+			case '\t':
 			case '\n':
 			case ',':
 			case ';':
@@ -35,8 +36,12 @@ char *cap_string(char *s)
 			case '}':
 				sep++;
 				break;
+			default:
+				sep = 0;
+				break;
+		}
 		if (s[i] >= 97 && s[i] <= 122)
-			flag++;
+			flag = 1;
 		if (cap == 1)
 		{
 			flag = 0;
