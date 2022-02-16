@@ -33,13 +33,13 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		{
 			if (a + b + plusT >= 10)
 			{
-			printf("entre al if de abajo\n");
-				r[i] = 0;
+				printf("entre al if de abajo\n");
+				r[i] = (a + b + plusT) % 10;
 				plusT = 1;
 			}
 			else
 			{
-			printf("entre al else\n");
+				printf("entre al else\n");
 				r[i] = (a + b + plusT) % 10;
 				plusT = 0;
 			}
@@ -49,7 +49,10 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		size++;
 	}
 	if (size > size_r)
-		return (r = "0");
+	{
+		*r = '0';
+		return (r);
+	}
 	r[size] = '\0';
 	printf("el valor de i despues del for: %d\n", i);
 	printf("el valor de size es este: %d\n", size);
