@@ -8,14 +8,9 @@
  */
 char *cap_string(char *s)
 {
-	int i = 0, j = 0, sep = 0;
+	int i = 0, sep = 0;
 
-	while (s[i] != '\0')
-	{
-		j++;
-		i++;
-	}
-	for (i = 0; i < j; i++)
+	while (s[i])
 	{
 		if (s[i] == '\n' || s[i] == '\t' || s[i] == ' ' || s[i] == ',')
 			sep++;
@@ -33,6 +28,7 @@ char *cap_string(char *s)
 			}
 			sep = 0;
 		}
+		i++;
 	}
 	return (s);
 }
