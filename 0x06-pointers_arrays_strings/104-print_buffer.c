@@ -7,5 +7,6 @@
  */
 void print_buffer(char *b, int size)
 {
-
+	_putchar(*b);
+	_putchar(size);
 }
