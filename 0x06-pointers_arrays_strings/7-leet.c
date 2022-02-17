@@ -10,7 +10,7 @@ char *leet(char *s)
 {
 	int i = 0, j = 0;
 	char target[] = "aAeEoOtTlL";
-	char replace[] = "4433007711";
+	char replace[] = "43071";
 
 	while (s[i] != '\0')
 	{
@@ -18,7 +18,7 @@ char *leet(char *s)
 		{
 			if (s[i] == target[j])
 			{
-				s[i] = replace[j];
+				s[i] = replace[j / 2];
 			}
 			j++;
 		}
