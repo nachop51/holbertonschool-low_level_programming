@@ -15,11 +15,8 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			found = 1;
-		}
-		if (found == 1)
-		{
-			s++;
+			s += i;
+			break;
 		}
 	}
 	if (found == 1)
