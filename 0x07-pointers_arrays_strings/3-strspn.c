@@ -29,7 +29,5 @@ unsigned int _strspn(char *s, char *accept)
 		if (notFound == 1)
 			break;
 	}
-	if (notFound == 1)
-		i = 0;
 	return (i);
 }
