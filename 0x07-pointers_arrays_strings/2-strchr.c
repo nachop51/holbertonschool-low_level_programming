@@ -9,7 +9,10 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int i = 0, j = 0;
+
+	while (s[j])
+		j++;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -18,6 +21,8 @@ char *_strchr(char *s, char c)
 			s += i;
 			break;
 		}
+		if (i == j - 1)
+			return (0);
 	}
 	return (s);
 }
