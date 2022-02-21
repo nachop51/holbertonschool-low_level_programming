@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
 			s += i;
 			break;
 		}
-		if (i == j - 1)
+		if (i == j - 1 || s[i] == '\0')
 			return (0);
 	}
 	return (s);
