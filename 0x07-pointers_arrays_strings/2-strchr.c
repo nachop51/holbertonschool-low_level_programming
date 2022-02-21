@@ -5,7 +5,7 @@
  * @s: string
  * @c: char to locate
  *
- * Return: a char
+ * Return: a pointer to a char
  */
 char *_strchr(char *s, char c)
 {
@@ -14,15 +14,10 @@ char *_strchr(char *s, char c)
 	while (s[j])
 		j++;
 
-	for (i = 0; i > -1; i++)
+	for (i = 0; s[i] != c; i++)
 	{
-		if (s[i] == c)
-		{
-			s += i;
-			break;
-		}
 		if (i == j - 1 || s[i] == '\0')
 			return (0);
 	}
-	return (s);
+	return (s + i);
 }
