@@ -1,1 +1,3 @@
-**Nested loops C project**
+# Nested loops 
+
+# First time testing nested loops
