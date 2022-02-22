@@ -2,5 +2,4 @@
 
 # In this project, we still
 # learning about pointers,
-# and we are practicing with
-# arrays also.
+# and we are practicing with arrays also.

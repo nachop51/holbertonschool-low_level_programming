@@ -1,3 +1,3 @@
 # Debugging project
 
-# Learning how to debug a file
+# Learning how to debug a file.
