@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - displays the name of the program
+ * main - displays the sums of n numbers
  * @argc: argument count
  * @argv: argument vector
  *
