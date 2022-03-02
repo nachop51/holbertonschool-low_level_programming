@@ -18,7 +18,7 @@ char **strtow(char *str)
 	{
 		if (str[i] == ' ')
 		{
-			if (str[i + ] != ' ')
+			if (str[i + 1] != ' ')
 			{
 				n++;
 			}			
