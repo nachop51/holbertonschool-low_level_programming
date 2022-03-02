@@ -31,7 +31,7 @@ char **strtow(char *str)
 			s[x] = malloc(sizeof(char) * j);
 			for (a = 0; a <= j; a++)
 			{
-				s[x][a] = str[a];
+				s[x][a] = str[a + i - j];
 			}
 			x++;
 			j = 0;
