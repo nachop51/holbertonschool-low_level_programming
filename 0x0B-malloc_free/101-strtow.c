@@ -9,17 +9,19 @@
  */
 char **strtow(char *str)
 {
-	int i = 0, j = 0, n = 0, x = 0, a;
+	int i = 0, j = 0, n = 1, x = 0, a;
 	char **s;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	for (i = 0; str[i]; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == ' ')
+		if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
+		{
 			n++;
+		}
 	}
-	s = malloc(sizeof(char *) * (n + 1));
+	s = malloc(sizeof(char *) * (n));
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
@@ -29,13 +31,12 @@ char **strtow(char *str)
 		if (str[i] == ' ')
 		{
 			s[x] = malloc(sizeof(char) * j);
-			for (a = 0; a <= j; a++)
+			for (a = 0; a < j; a++)
 			{
 				s[x][a] = str[a + i - j];
 			}
 			x++;
 			j = 0;
-			continue;
 		}
 	}
 	return (s);
