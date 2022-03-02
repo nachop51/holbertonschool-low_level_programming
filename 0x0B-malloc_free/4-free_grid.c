@@ -2,8 +2,8 @@
 
 /**
  * free_grid - frees a 2 dimensional grid
- * @grid:
- * @height:
+ * @grid: array
+ * @height: height of the array
  */
 void free_grid(int **grid, int height)
 {
