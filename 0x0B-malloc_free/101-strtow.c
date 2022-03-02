@@ -19,7 +19,7 @@ char **strtow(char *str)
 		if (str[i] == ' ')
 			n++;
 	}
-	s = malloc(sizeof(char *) * n);
+	s = malloc(sizeof(char *) * (n + 1));
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
