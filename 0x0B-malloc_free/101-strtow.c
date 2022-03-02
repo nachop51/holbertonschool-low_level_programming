@@ -22,7 +22,7 @@ char **strtow(char *str)
 	s = malloc(sizeof(char *) * n);
 	if (s == NULL)
 		return (NULL);
-	for (i = 0; str[i]; i++)
+	for (i = 0; str[i] && x < n; i++)
 	{
 		if (str[i] != ' ')
 			j++;
@@ -31,7 +31,7 @@ char **strtow(char *str)
 			s[x] = malloc(sizeof(char) * (j + 1));
 			for (a = 0; a <= j; a++)
 			{
-				s[x][a] = str[a + i - j];
+				s[x][a] = str[a + i + 1 - j];
 			}
 			x++;
 			j = 0;
