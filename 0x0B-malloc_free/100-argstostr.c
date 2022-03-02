@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - concatenates all arguments
+ * argstostr - concatenates all arguments
  * @ac: argument counter
  * @av: argument vector
  *
@@ -34,7 +34,7 @@ char *argstostr(int ac, char **av)
 	for (n = 0; n < ac; n++)
 	{
 		j = 0;
-		while(av[n][j])
+		while (av[n][j])
 		{
 			s[count] = av[n][j];
 			j++;
