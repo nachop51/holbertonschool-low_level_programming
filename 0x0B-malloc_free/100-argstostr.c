@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - concatenates all arguments
@@ -9,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j = 0, n = 0, count = 0;
+	int i = 0, j = 0, n = 0, count = 0;
 	char *s;
 
 	if (ac == 0 || av == NULL)
