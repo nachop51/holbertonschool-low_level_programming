@@ -31,7 +31,7 @@ char **strtow(char *str)
 	{
 		if (str[i] != ' ')
 			j++;
-		if (str[i] == ' ' || str[i + 1] == '\0')
+		if (str[i] == ' ')
 		{
 			s[x] = malloc(sizeof(char) * (j + 1));
 			for (a = 0; a < j; a++)
