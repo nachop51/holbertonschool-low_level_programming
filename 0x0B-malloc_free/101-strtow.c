@@ -33,7 +33,7 @@ char **strtow(char *str)
 			j++;
 		if (str[i] == ' ')
 		{
-			s[x] = malloc(sizeof(char) * j + 5);
+			s[x] = malloc(sizeof(char) * j);
 			for (a = 0; a < j; a++)
 			{
 				s[x][a] = str[a + i - j];
