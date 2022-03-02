@@ -19,7 +19,6 @@ char **strtow(char *str)
 		if (str[i] == ' ')
 			n++;
 	}
-	printf("%d", n);
 	s = malloc(sizeof(char *) * n);
 	if (s == NULL)
 		return (NULL);
