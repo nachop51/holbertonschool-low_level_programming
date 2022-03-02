@@ -14,7 +14,7 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	for (i = 0; str; i++)
+	for (i = 0; str[i]; i++)
 	{
 		if (str[i] == ' ')
 			n++;
