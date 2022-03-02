@@ -29,7 +29,7 @@ char **strtow(char *str)
 		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 		{
 			s[x] = malloc(sizeof(char) * (j + 1));
-			for (a = 0; a <= j; a++)
+			for (a = 0; a < j; a++)
 			{
 				s[x][a] = str[a + i + 1 - j];
 			}
