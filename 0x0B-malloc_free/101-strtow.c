@@ -33,6 +33,7 @@ char **strtow(char *str)
 			{
 				s[x][a] = str[a + i + 1 - j];
 			}
+			s[x][i + j + 1] = '\0';
 			x++;
 			j = 0;
 		}
