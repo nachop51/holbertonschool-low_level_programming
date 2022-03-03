@@ -2,8 +2,9 @@
 
 /**
  * _calloc - allocates memory for an array
- * @nmemb: 
- * @size: 
+ * @nmemb: number of memory
+ * @size: size of the array
+ * Return: a pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
