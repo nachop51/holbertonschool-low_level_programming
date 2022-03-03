@@ -38,5 +38,6 @@ char **strtow(char *str)
 			j = 0;
 		}
 	}
+	s[x] = NULL;
 	return (s);
 }
