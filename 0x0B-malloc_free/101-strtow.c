@@ -9,7 +9,7 @@
  */
 char **strtow(char *str)
 {
-	int i = 0, j = 0, n = 0, x = 0, a, flag = 0;
+	int i = 0, j = 0, n = 0, x = 0, a = 0, flag = 0;
 	char **s;
 
 	if (str == NULL || *str == '\0')
