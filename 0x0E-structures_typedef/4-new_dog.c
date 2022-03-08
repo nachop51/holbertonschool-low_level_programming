@@ -13,8 +13,8 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i = 0;
-	char *namecpy = strcpy(namecpy, name);
-	char *ownercpy = strcpy(ownercpy, owner);
+	char *namecpy = strdup(name);
+	char *ownercpy = strdup(owner);
 	dog_t *d;
 
 	d = malloc(sizeof(dog_t));
