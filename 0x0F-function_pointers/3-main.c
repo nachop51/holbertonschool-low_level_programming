@@ -3,17 +3,14 @@
 int main(int argc, char *argv[])
 {
 	int result, i, j;
-	char p[] = {'+', '-', '*', '%', '/'};
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	for (i = 0; i < 5; i++)
-		if (argv[2][0] == p[i])
-			break;
-	if (i == 5)
+	if (argv[2][0] != 37 && argv[2][0] != 47 && argv[2][0] != 43 &&
+	argv[2][0] != 45 && argv[2][0] != 42)
 	{
 		printf("Error\n");
 		exit(99);
