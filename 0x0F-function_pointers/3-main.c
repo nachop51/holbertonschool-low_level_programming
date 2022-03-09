@@ -1,5 +1,12 @@
 #include "3-calc.h"
 
+/**
+ * main - program that performs simple operations
+ * @argc: argument counter
+ * @argv: argument vector
+ *
+ * Return: no error
+ */
 int main(int argc, char *argv[])
 {
 	int result, i, j;
@@ -31,5 +38,5 @@ int main(int argc, char *argv[])
 	result = (*get_op_func(argv[2]))(i, j);
 
 	printf("%d\n", result);
-	return 0;
+	return (0);
 }
