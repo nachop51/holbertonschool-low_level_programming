@@ -57,7 +57,7 @@ void print_char(va_list args)
  */
 void print_int(va_list args)
 {
-	printf("%i", va_arg(args, int));
+	printf("%d", va_arg(args, int));
 }
 
 /**
