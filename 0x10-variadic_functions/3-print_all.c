@@ -9,9 +9,6 @@
  */
 void print_all(const char *const format, ...)
 {
-	int i = 0, j = 0;
-	char *juan = "";
-	va_list args;
 	form_t form_ops[] = {
 			{"c", print_char},
 			{"f", print_float},
@@ -19,6 +16,10 @@ void print_all(const char *const format, ...)
 			{"s", print_string},
 			{NULL, NULL},
 	};
+
+	int i = 0, j = 0;
+	char *juan = "";
+	va_list args;
 
 	va_start(args, format);
 
