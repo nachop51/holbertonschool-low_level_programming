@@ -10,6 +10,7 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0, j = 0;
+	char *juan = "";
 	va_list args;
 	form_t form_ops[] = {
 		{"c", print_char},
@@ -28,8 +29,9 @@ void print_all(const char * const format, ...)
 		{
 			if (form_ops[j].form[0] == format[i])
 			{
+				printf("%s", juan);
 				form_ops[j].f(args);
-				printf(", ");
+				juan = ", ";
 			}
 			j++;
 		}
