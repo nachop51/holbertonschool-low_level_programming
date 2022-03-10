@@ -3,47 +3,6 @@
 #include <stdarg.h>
 
 /**
- * print_all - prints out all things passed
- * @format: number of parameters
- * @...: n parameters
- */
-void print_all(const char *const format, ...)
-{
-	form_t form_ops[] = {
-			{"c", print_char},
-			{"f", print_float},
-			{"i", print_int},
-			{"s", print_string},
-			{NULL, NULL},
-	};
-
-	int i = 0, j = 0;
-	char *juan = "";
-	va_list args;
-
-	va_start(args, format);
-
-	while (format[i] != '\0' && format != NULL)
-	{
-		j = 0;
-		while (j < 4)
-		{
-			if (form_ops[j].form[0] == format[i])
-			{
-				printf("%s", juan);
-				form_ops[j].f(args);
-				juan = ", ";
-			}
-			j++;
-		}
-		i++;
-	}
-	printf("\n");
-
-	va_end(args);
-}
-
-/**
  * print_char - prints out a char
  * @args: char to print
  */
@@ -86,3 +45,45 @@ void print_string(va_list args)
 	}
 	printf("%s", str);
 }
+
+/**
+ * print_all - prints out all things passed
+ * @format: number of parameters
+ * @...: n parameters
+ */
+void print_all(const char *const format, ...)
+{
+	form_t form_ops[] = {
+			{"c", print_char},
+			{"f", print_float},
+			{"i", print_int},
+			{"s", print_string},
+			{NULL, NULL},
+	};
+
+	int i = 0, j = 0;
+	char *juan = "";
+	va_list args;
+
+	va_start(args, format);
+
+	while (format[i] != '\0' && format != NULL)
+	{
+		j = 0;
+		while (j < 4)
+		{
+			if (form_ops[j].form[0] == format[i])
+			{
+				printf("%s", juan);
+				form_ops[j].f(args);
+				juan = ", ";
+			}
+			j++;
+		}
+		i++;
+	}
+	printf("\n");
+
+	va_end(args);
+}
+
