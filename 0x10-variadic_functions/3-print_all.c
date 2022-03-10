@@ -7,18 +7,17 @@
  * @format: number of parameters
  * @...: n parameters
  */
-void print_all(const char * const format, ...)
+void print_all(const char *const format, ...)
 {
 	int i = 0, j = 0;
 	char *juan = "";
 	va_list args;
 	form_t form_ops[] = {
-		{"c", print_char},
-		{"f", print_float},
-		{"i", print_int},
-		{"s", print_string},
-		{NULL, NULL}
-	};
+			{"c", print_char},
+			{"f", print_float},
+			{"i", print_int},
+			{"s", print_string},
+			{NULL, NULL}};
 
 	va_start(args, format);
 
@@ -78,6 +77,10 @@ void print_string(va_list args)
 	char *str = va_arg(args, char *);
 
 	if (str == NULL)
+	{
 		str = "(nil)";
+		printf("%s", str);
+		return;
+	}
 	printf("%s", str);
 }
