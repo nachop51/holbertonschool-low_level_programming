@@ -7,16 +7,21 @@ int _putchar(char);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
+void print_all(const char * const format, ...);
 
 /**
  * struct format - struct
- * @format: format style
+ * @form: format style
  * @f: pointer to the function
  */
 typedef struct format
 {
-	char *format;
-	int (*f)(va_list);
-} type_format;
+	char *form;
+	void (*f)(va_list);
+} form_t;
+void print_char(va_list args);
+void print_int(va_list args);
+void print_float(va_list args);
+void print_string(va_list args);
 
 #endif
