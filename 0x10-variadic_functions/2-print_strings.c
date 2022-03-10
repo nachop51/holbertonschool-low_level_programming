@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 
 /**
  * print_strings - prints out a string
@@ -12,8 +13,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *str;
 	va_list args;
 
-	if (n == 0)
-		return;
 	if (!separator)
 		j = 1;
 	va_start(args, n);
