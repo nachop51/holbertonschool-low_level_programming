@@ -7,6 +7,11 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 
+/**
+ * struct format - struct
+ * @format: format style
+ * @f: pointer to the function
+ */
 typedef struct format
 {
 	char *format;
