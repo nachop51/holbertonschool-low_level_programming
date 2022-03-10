@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
+
 /**
  * print_all - prints out all things passed
  * @format: number of parameters
@@ -28,8 +29,7 @@ void print_all(const char * const format, ...)
 			if (form_ops[j].form[0] == format[i])
 			{
 				form_ops[j].f(args);
-				if (format[i + 1] != '\0')
-					printf(", ");
+				printf(", ");
 			}
 			j++;
 		}
@@ -76,6 +76,6 @@ void print_string(va_list args)
 	char *str = va_arg(args, char *);
 
 	if (str == NULL)
-		printf("(nil)");
+		str = "(nil)";
 	printf("%s", str);
 }
