@@ -17,12 +17,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->str = _strdup(str);
 	new->len = _strlen(str);
 	new->next = NULL;
-	last = *head;
-	if (head == NULL)
+	if (*head == NULL)
 	{
 		*head = new;
 		return (new);
 	}
+	last = *head;
 	while (last->next != NULL)
 	{
 		last = last->next;
@@ -69,9 +69,9 @@ char *_strdup(const char *str)
 int _strlen(const char *s)
 {
 	int i = 0;
-	
+
 	while (s[i])
 		i++;
-	
+
 	return (i);
 }
