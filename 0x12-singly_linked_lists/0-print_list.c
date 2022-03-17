@@ -4,7 +4,7 @@
 /**
  * print_list - prints out a list
  * @h: list
- * 
+ *
  * Return: te number of nodes
  */
 size_t print_list(const list_t *h)
