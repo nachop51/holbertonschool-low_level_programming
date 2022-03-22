@@ -53,7 +53,7 @@ size_t print_listint_safe(const listint_t *head)
 				{
 					printf("[%p] %d\n", (void *)fast_p, fast_p->n);
 					slow_p = slow_p->next, fast_p = fast_p->next;
-					nodeCount +=1;
+					nodeCount += 1;
 				}
 				printf("-> [%p] %d\n", (void *)slow_p, slow_p->n);
 				return (nodeCount);
