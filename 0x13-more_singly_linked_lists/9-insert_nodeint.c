@@ -18,20 +18,20 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	new = malloc(sizeof(listint_t));
 	if (!new)
 		return (NULL);
-	aux = *head;
+	new->n = n;
 	if (idx == 0)
 	{
 		aux->next = (*head);
 		(*head) = aux;
 		return (aux);
 	}
-	for (i = 1; i < idx; i++)
+	aux = *head;
+	for (i = 1; i < idx && aux->next; i++)
 	{
 		aux = aux->next;
 		if (aux == NULL)
 			return (NULL);
 	}
-	new->n = n;
 	new->next = aux->next;
 	aux->next = new;
 	return (aux);
