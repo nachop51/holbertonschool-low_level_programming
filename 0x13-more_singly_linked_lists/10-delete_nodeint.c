@@ -3,6 +3,7 @@
 
 /**
  * delete_nodeint_at_index - deletes the node at index of a list
+ * @head: head of a list
  * @index: index of the list
  *
  * Return: 1 if succeeded or -1 if failed
@@ -34,6 +35,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		*head = aux->next;
 		free(aux);
 	}
-	
+
 	return (1);
 }
