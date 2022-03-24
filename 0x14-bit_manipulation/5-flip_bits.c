@@ -5,7 +5,7 @@
  * @n: number
  * @m: the other number
  *
- * Return:
+ * Return: the number of bits that it will take to change the number
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
