@@ -91,5 +91,5 @@ int main(int ac, char **av)
 		dprintf(2, "Error: Can't close fd %d\n", fd2);
 		exit(100);
 	}
-	return (1);
+	return (0);
 }
