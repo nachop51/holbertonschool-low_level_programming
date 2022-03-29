@@ -62,9 +62,7 @@ int main(int ac, char **av)
 	}
 	buf = malloc(sizeof(char) * 1024);
 	if (!buf)
-	{
 		exit(98);
-	}
 	fd = openFileTo(av[1]);
 	fd2 = openFileFrom(av[2]);
 	b = read(fd2, buf, 1024);
