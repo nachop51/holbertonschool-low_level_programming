@@ -41,8 +41,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	prox = node->next;
 	prev = node->prev;
-	prox->prev = node->prev;
-	prev->next = node->next;
+	prox->prev = prev;
+	prev->next = prox;
 	free(node);
 	return (1);
 }
