@@ -3,7 +3,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	size_t ht_size = 0, flag = 0;
-	hash_node_t **h = NULL, *aux = NULL;
+	hash_node_t *aux = NULL;
 
 	if (!ht)
 		return;
@@ -11,8 +11,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	while (ht_size < ht->size)
 	{
-		h = &ht->array[ht_size];
-		aux = *h;
+		aux = ht->array[ht_size];
 		if (aux && aux->key)
 		{
 			if (flag == 1)
