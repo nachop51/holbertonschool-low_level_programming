@@ -3,7 +3,7 @@
 /**
  * hash_table_set - Sets an item in a hash table
  *
- * @ht: Hash table
+ * @ht: Hash Table
  * @key: Key
  * @value: Value
  * Returns: 1 if it succeeded, 0 otherwise

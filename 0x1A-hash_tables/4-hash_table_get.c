@@ -1,5 +1,12 @@
 #include "hash_tables.h"
 
+/**
+ * hash_table_get - Retrieves an element from the HashTable
+ *
+ * @ht: HashTable
+ * @key: Key
+ * Return: If the key exists returns the value, if not, null
+ */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	size_t key_value = 0;

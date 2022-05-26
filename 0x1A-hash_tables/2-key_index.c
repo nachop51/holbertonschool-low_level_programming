@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 
 /**
- * key_index - Gives an index of a key
+ * key_index - Returns an index of a key
  *
- * @key:
+ * @key: Key to hash
  * @size: size of the array
  * Return: index at which key/value pair should be stored
  */
