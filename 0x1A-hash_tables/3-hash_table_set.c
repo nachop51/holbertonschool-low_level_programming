@@ -6,7 +6,7 @@
  * @ht: Hash Table
  * @key: Key
  * @value: Value
- * Returns: 1 if it succeeded, 0 otherwise
+ * Return: 1 if it succeeded, 0 otherwise
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -26,11 +26,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 }
 
 /**
- * add_node - adds a new node at the beginning of a list
- * @list: address
- * @str: string
+ * add_to_list - Inserts a node in the beginning of a list
  *
- * Return: the address of the new element
+ * @list: List
+ * @k: Key to insert
+ * @v: Value to insert
+ * Return: A pointer to the head of the list
  */
 hash_node_t *add_to_list(hash_node_t **list, const char *k, const char *v)
 {
