@@ -27,9 +27,9 @@ void hash_table_print(const hash_table_t *ht)
 				if (!aux->next)
 					break;
 				aux = aux->next;
+				if (flag == 0)
+					flag++;
 			}
-			if (flag == 0)
-				flag++;
 		}
 		ht_size++;
 	}
