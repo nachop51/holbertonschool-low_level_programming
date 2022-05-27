@@ -23,12 +23,12 @@ void hash_table_print(const hash_table_t *ht)
 			{
 				if (flag == 1)
 					printf(", ");
+				if (flag == 0)
+					flag++;
 				printf("'%s': '%s'", aux->key, aux->value);
 				if (!aux->next)
 					break;
 				aux = aux->next;
-				if (flag == 0)
-					flag++;
 			}
 		}
 		ht_size++;
