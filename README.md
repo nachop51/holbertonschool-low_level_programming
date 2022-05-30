@@ -4,7 +4,7 @@
 
 <h1 align="center">Low Level Programming & Algorithm - C Programming Language </h1>
 
-<h1 align="center">------Projects------</h1>
+<h1 align="center">Projects<h1>
 
 | **#** | **Projects**                                                                           | **Description**                             |
 | ----- | -------------------------------------------------------------------------------------- | ------------------------------------------- |
