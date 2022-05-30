@@ -1,5 +1,5 @@
-<div>
-    <img src="https://raw.githubusercontent.com/Nachop51/Nachop51/main/logos/holberton.png">
+<div align="center">
+    <a href="https://www.holbertonschool.com/"><img src="https://raw.githubusercontent.com/Nachop51/Nachop51/main/logos/holberton.png"></a>
 </div>
 
 <h1 align="center">Low Level Programming & Algorithm - C Programming Language </h1>
