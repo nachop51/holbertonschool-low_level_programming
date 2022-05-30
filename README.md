@@ -18,7 +18,7 @@
 |   8   | **[0x07. C - Even more pointers, arrays and strings](./0x07-pointers_arrays_strings)** | *Even more pointers, arrays and strings.*   |
 |   9   | **[0x08. C - Recursion](./0x08-recursion)**                                            | *Recursive functions.*                      |
 |  10   | **[0x09. C - Static libraries](./0x09-static_libraries)**                              | *Static Libraries.*                         |
-|  11   | **[0x0A. C - argc, argv](./0x0A-argc_argv)**                                           | *Argument counter and vector*               |
+|  11   | **[0x0A. C - argc, argv](./0x0A-argc_argv)**                                           | *Argument counter and vector.*               |
 |  12   | **[0x0B. C - malloc, free](./0x0B-malloc_free)**                                       | *Malloc and free.*                          |
 |  13   | **[0x0C. C - More malloc, free](./0x0C-more_malloc_free)**                             | *More malloc and free.*                     |
 |  14   | **[0x0D. C - Preprocessor](./0x0D-preprocessor)**                                      | *Preprocessor.*                             |
