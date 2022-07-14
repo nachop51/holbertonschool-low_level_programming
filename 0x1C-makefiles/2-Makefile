@@ -1,0 +1,11 @@
+CC=gcc
+SRC=$(wildcard *.c)
+OBJ=$(wildcard *.o)
+NAME=school
+
+compile: $(OBJ)
+	$(CC) $(SRC) -c -o main.o
+
+all: 
+	$(CC) $(OBJ) -o $(NAME)
+
